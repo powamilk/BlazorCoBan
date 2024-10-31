@@ -13,11 +13,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BlazorCoBan\BlazorCoBan.csproj" />
+    <ProjectReference Include="..\Blazor.Share\Blazor.Share.csproj" />
   </ItemGroup>
 
 </Project>

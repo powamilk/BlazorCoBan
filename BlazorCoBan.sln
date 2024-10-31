@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCoBan", "BlazorCoBan\BlazorCoBan.csproj", "{B3FC2392-C8C6-4FBE-A02E-F9E2BB00BB40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorCoBan", "BlazorCoBan\BlazorCoBan.csproj", "{B3FC2392-C8C6-4FBE-A02E-F9E2BB00BB40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAPIBlazor", "DemoAPIBlazor\DemoAPIBlazor.csproj", "{892F4337-49D7-4AD9-983B-FE3AAE4FA8CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoAPIBlazor", "DemoAPIBlazor\DemoAPIBlazor.csproj", "{892F4337-49D7-4AD9-983B-FE3AAE4FA8CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoCodeMauBlazor", "DemoCodeMauBlazor\DemoCodeMauBlazor.csproj", "{B0181AF7-3085-4740-84AE-D4C00E9579F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCLient", "BlazorCLient\BlazorCLient.csproj", "{B8DB6C23-3495-494D-A84E-AEA186E6A0DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.Share", "Blazor.Share\Blazor.Share.csproj", "{140A9B35-BD34-48A7-BC76-CBDD885C370C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{892F4337-49D7-4AD9-983B-FE3AAE4FA8CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{892F4337-49D7-4AD9-983B-FE3AAE4FA8CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{892F4337-49D7-4AD9-983B-FE3AAE4FA8CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0181AF7-3085-4740-84AE-D4C00E9579F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0181AF7-3085-4740-84AE-D4C00E9579F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0181AF7-3085-4740-84AE-D4C00E9579F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0181AF7-3085-4740-84AE-D4C00E9579F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8DB6C23-3495-494D-A84E-AEA186E6A0DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8DB6C23-3495-494D-A84E-AEA186E6A0DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8DB6C23-3495-494D-A84E-AEA186E6A0DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8DB6C23-3495-494D-A84E-AEA186E6A0DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{140A9B35-BD34-48A7-BC76-CBDD885C370C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{140A9B35-BD34-48A7-BC76-CBDD885C370C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{140A9B35-BD34-48A7-BC76-CBDD885C370C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{140A9B35-BD34-48A7-BC76-CBDD885C370C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

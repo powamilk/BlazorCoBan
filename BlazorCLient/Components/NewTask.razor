@@ -1,0 +1,23 @@
+﻿@page "/new-task"
+@inject TaskService TaskService
+
+<EditForm Model="@task" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <InputText @bind-Value="task.Title" placeholder="Task Title" />
+    <InputTextArea @bind-Value="task.Description" placeholder="Task Description" />
+    <InputDate @bind-Value="task.DueDate" />
+
+    <button type="submit">Save Task</button>
+</EditForm>
+
+@code {
+    private TaskItem task = new TaskItem();
+
+    private async Task HandleValidSubmit()
+    {
+        await TaskService.CreateTaskAsync(task);
+        Navigation.NavigateTo("/tasks");
+    }
+}

@@ -1,0 +1,32 @@
+﻿@page "/tasks"
+@using Blazor.Share.Models
+@using BlazorCLient.Service
+@inject TaskService TaskService
+
+<h3>Task List</h3>
+
+<div>
+    @if (isLoading)
+    {
+        <p>Loading...</p>
+    }
+    else
+    {
+        @foreach (var task in tasks)
+        {
+            <p>@task.Title</p>
+        }
+    }
+</div>
+
+@code {
+    private bool isLoading = true;
+    private List<TaskItem> tasks;
+
+    protected override async Task OnInitializedAsync()
+    {
+        isLoading = true;
+        tasks = await TaskService.GetTasksAsync();
+        isLoading = false;
+    }
+}

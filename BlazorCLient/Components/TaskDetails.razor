@@ -1,0 +1,20 @@
+﻿@page "/tasks/{id:int}"
+@using Blazor.Share.Models
+@inject TaskService TaskService
+
+<h3>Task Details</h3>
+
+<div>
+    <p>@task?.Title</p>
+    <p>@task?.Description</p>
+</div>
+
+@code {
+    [Parameter] public int id { get; set; }
+    private TaskItem task;
+
+    protected override async Task OnInitializedAsync()
+    {
+        task = await TaskService.GetTaskByIdAsync(id);
+    }
+}
